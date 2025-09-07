@@ -1,0 +1,15 @@
+8.7 Types of Inheritance
+
+    Simple Inheritance                      Multiple Inheritance  (Java not allow it)
+       ParentClass                     ParentClass_1       ParentClass_2
+           ⬆️                                    ↖️           ↗️
+       ChildClass                                  ChildClass
+
+
+
+  Multi Level Inheritance                   Hierarchical Inheritance
+        ParentClass                               ParentClass
+            ⬆️                                   ↗️           ↖️
+        ChildClass_1                    ChildClass_1       ChildClass_2
+            ⬆️
+        ChildClass_2

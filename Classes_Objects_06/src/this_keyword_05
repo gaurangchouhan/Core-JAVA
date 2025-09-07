@@ -1,0 +1,44 @@
+6.5 This Keyword
+
+1. Current Instance: Refers to the current class instance variable.
+2. Constructor Call: Can be used to invoke a constructor of the same class (this()).
+3. Method Call: Invokes a method of the current object.
+4. Pass as Argument: Can be passed as an argument in the method call.
+5. Return the Current Class Instance: Can return the current class instance from the method.
+6. Instance Variable ko hi sirf this lga ke access kr skte h
+
+* Static Keyword
+
+1. Static Variables: Belong to the class, not individual instances.
+Shared among all objects of the class.
+
+➡️ agr static variable bnaya h to usse esa likhna padega
+
+static int variableName;
+static{
+  variableName = 0;
+}
+
+➡️ static variable ko class ka naam lga ke access kiya jata h
+   className.staticVariable = ....;
+
+2. Static Methods: Can be called without creating an object of the class.
+Can only directly access static variables and other static methods.
+
+3. No Access to Non-static Members: Static methods and blocks cannot directly access
+   non-static members (variables and methods) of the class.
+➡️ agr aapne static member bnanya h to uska access non-static member ko nhi hoga
+
+➡ ek car h uske teen object h (C1, C2, C3)
+➡ ab agr car ko bole ki car.color to jmv bolega konse object ka color jo car nhi bata payega
+➡ ab agr car ki kuch properties h (model, color, name, etc.) car ki ye sb properties C1, C2, C3
+  teeno access kr skte h lekin car C1, C2, C3 ki koisi bhi property ko access nhi kr skta
+
+public  static   void   main(String[] args)
+          ⬇️                   ⬇️
+   Makes it class       Name of the method
+   method so that     which is called by JVM.
+   it can be called
+   using class name
+   without creating
+   an object of the class.

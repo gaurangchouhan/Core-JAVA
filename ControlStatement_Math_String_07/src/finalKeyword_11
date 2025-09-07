@@ -1,0 +1,20 @@
+7.11 Final keyword
+
+public class Main{
+    public final String name = "John";
+    public void setName (String name) {
+        this name = name;   // cannot reassign final variables
+    }
+｝
+
+1. Variable: When applied to a variable, it becomes a constant,
+             meaning its value cannot be changed once initialized.
+
+2. Efficiency: Using final can lead to performance optimization,
+               as the compiler can make certain assumptions about final elements.
+
+3. Null Safety: A final variable must be initialized before
+                the constructor completes, reducing null pointer errors.
+
+4. Immutable Objects: Helps in creating immutable objects in
+                      combination with private fields and no setter methods.

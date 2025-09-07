@@ -1,0 +1,9 @@
+5.1 Java Comments
+
+1. Used to add notes in Java code
+2. Not displayed on the web page
+3. Helpful for code organization
+4. Syntax:
+1. Single Line: //
+2. Multi Line: /* */
+3. Java Docs: /** */

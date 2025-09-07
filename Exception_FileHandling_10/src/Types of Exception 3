@@ -1,0 +1,20 @@
+10.3 Types of Exceptions
+
+                                 Types of Exceptions
+                               ↙️                    ↘️
+                          User-Defined            Built-in
+                          Exception               Exception
+                                                ↙️          ↘️
+                                            Checked       Unchecked
+                                           Exceptions     Exceptions
+                                               ⬇️             ⬇️
+                               ClassNotFoundException    ArithmeticException
+                               InterruptedException      ClassCastException
+                               IOException               NullPointer Exception
+                               InstantiationException    ArrayIndexOutOfBoundsException
+                               SQLException              ArrayStoreException
+                               FileNotFoundException     IllegalThreadStateException
+
+
+1. Checked Exceptions: These are exceptions that must be either caught or declared in the method.
+2. Unchecked Exceptions: These are exceptions that do not need to be explicitly handled.

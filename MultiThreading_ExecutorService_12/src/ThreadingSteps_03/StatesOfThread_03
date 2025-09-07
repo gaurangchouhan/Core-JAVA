@@ -1,0 +1,33 @@
+12.3 States of a Thread
+
+1. New: Thread is created but not started.
+2. Runnable: Thread is ready or running.
+3. Running: Thread is actively executing tasks.
+4. Blocked/Waiting: Thread is alive but not active because
+                    it's waiting for resources or other threads.
+5. Terminated: Thread has finished or stopped running.
+
+
+                                  waiting /
+                                  sleeping/
+                                  blocking
+       notify()/ notifyAll()    ↙         ↖     wait()
+      when sleep time is up   ↙             ↖   sleep()
+          resume()          ↙                 ↖ suspend()
+                          ↙                     ↖
+       New      ➡️    Runnable  ➡➡➡➡➡➡➡➡➡➡➡  Running   ➡️   Terminated
+                              ↘             ↙              (Dead state)
+                                ⬅⬅⬅⬅⬅⬅⬅
+                                   yield  ()
+
+
+A. sbse pehle new thread ko create krte h
+B. fir jb wo ready ho jata h running ke liye to usse runnable ne bhejte h
+C. uske baad task ya to  executing process me jayega ya task yield method call krega
+   jisse wo wapas runnable me aa jayega aur durse ko run hone ka mouka dega aur
+   jb baad mouka aayega to khud run hoga
+D. ya task running se waiting/ sleeping/ blocking me jayega jb tk running apna hath
+   ka kaam complete nhi kr leta (jese camera ka access ek baar me ek hi app kr skti h
+   jb tk dusre ko wait krna padta h).
+E. fir waiting wala task wapas runnable me aayega fir mouka aane pr running me jayega
+   execute hoga then terminate ho jayega

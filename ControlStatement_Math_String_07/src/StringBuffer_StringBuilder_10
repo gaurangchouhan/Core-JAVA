@@ -1,0 +1,29 @@
+7.10 StringBuffer vs StringBuilder
+
+StringBuilder sentence = new StringBuilder ("This is a sentence.");
+sentence, append ("Added word.");
+System.out.println(sentence.toString()); //This is a sentence.Added word.
+
+Parameter       String                StringBuilder                StringBuffer
+
+mutability     immutable                 mutable                      mutable
+Storage        String constant             heap                        heap
+               pool
+
+Thread         Not used in the        Not thread-safe               Thread-safe
+safety         threaded              so it is used in a          so it is used in a
+               environment as         single-threaded               multi-threaded
+               it is immutable          environment                   environment
+
+Speed          Comparably slowest    Comparably fastest         Faster than String build
+                                                                Slower than StringBuilder
+
+
+
+
+
+
+
+
+
+

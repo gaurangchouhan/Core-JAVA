@@ -1,0 +1,21 @@
+9.8 Method / Constructor Overriding
+
+1. Method overriding occurs when a subclass provides a specific implementation
+   for a method already defined in its superclass.
+
+2. Run-Time Polymorphism: Overriding is a basis for runtime polymorphism, where
+                          the method call is determined by the object's type at runtime.
+
+3. Superclass Reference: An overridden method can be called through a superclass reference
+                         holding a subclass object.
+
+* parent wale method ko child class me redefine krna ho to usko bolte h method overriding
+
+5. Same Signature: Overridden methods must have ine same name, return type,
+                   and parameters as the meinod in the parent class.
+
+4. Access Level: The access level cannot be more restrictive than the overridden method's
+                 access level.
+
+6. @Override Annotation: This annotation is optional but helps to ensure that
+                         method is correctly overridden.

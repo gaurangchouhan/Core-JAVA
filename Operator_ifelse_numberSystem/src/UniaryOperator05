@@ -1,0 +1,14 @@
+Operator       Description                                     Example
+               Converts a positive value to a negative         x = -y
+
+Pre Increment  Increment the value by 1 and then               x = ++y
+               use it in our statement
+
+Pre Decrement  Decrement the value by 1 and then               x = --y
+               use it in our statement
+
+Post           Use current value in the statement and then     x = y++
+Increment      increment it by 1
+
+Post           Use current value in the statement and then     x = y--
+Decrement      decrement it by 1

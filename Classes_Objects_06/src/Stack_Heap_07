@@ -1,0 +1,38 @@
+6.7 Stack vs Heap Memory
+
+              Stack                              Heap
+Ordered, on top of each other           unorganised collection (ढेर)
+
+e.g. -  main method call kiya              class jo bhi objects
+                 ⬇️                        declare krti h wo sb
+        wo call krenga                 heap memory me store hote h
+        driver class
+        ki start method ko
+                 ⬇️
+            start ne sout
+            print kraya
+
+main() ➡️ doStuff ➡️ go()
+                      ⬇️
+                 {go contains
+                  int a = 5}
+                      ⬇️
+                 to jb go call
+                 ho jayega to
+                 go method ke sath
+                 int a bhi memory
+                 se chala jayega
+
+➡️ heap me jaha bhi jagah milegi waha object bna ke uska reference de denge stack me
+
+      string color = "red";
+              ⬇       ⬇
+          reference  object
+ * Code:-
+                             Stack        heap
+   {                         num
+   int num = 50;             name ➡➡➡➡➡➡➡ Java(String Pool)
+   String name = "Java";      .
+   Demo d = new Demo();       .
+   }                          .
+                              d   ➡➡➡➡➡➡➡  demo object

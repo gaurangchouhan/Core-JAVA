@@ -1,0 +1,42 @@
+6.3 Declaring Objects
+
+   *Statement*                  Effect
+
+   box myBox;                 myBox naam ka address create hoga
+   myBox = new Box;           myBox ➡️ data store hota ➡️ width, Height, depth
+
+1. Object Creation: new instantiates a new object of a class.
+2. Memory Allocation: Allocates memory for the object in the heap
+3. Constructor Invocation: Calls the class constructor to initialize the object
+4. Reference Return: Returns a reference to the created object.
+5. Array Creation: Also used for creating arrays, like int[] arr = new int[5]
+6. Dynamic Allocation: Unlike static állocation, new allows for dyn memory allocation,
+                       allocating memory at runtime.
+
+➡️ ye jb hota h jb aapka code actually run ho rha h, code run hone wala nhi h
+   ek ek line krke run ho rha h, jaha new object aaya tbhi wo object
+   memory me declare kiya jayega, pehle se aapki tayaari me declare nhi kiya
+   jayega
+
+* Syntax:
+
+        Class Name        keyword
+            ⬆️               ⬆️
+      *  Student student1 = new Student();
+                    ⬇️              ⬇️
+             reference name     Constructor
+             or
+             object name
+
+      *  MyClass objRefVar    =     new      MyClass();
+            ⬇️      ⬇️               ⬇️          ⬇️
+           Declaration         Installation  Initialization
+
+      ➡ new keyword class ki actual copy bnane ke liye use hota h
+
+* Using Object
+
+Access properties using dot Operator like product.price
+
+6.4 Class vs Object
+Class is a blueprint; Objects are real value in memory

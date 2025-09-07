@@ -1,0 +1,56 @@
+7.9 String class
+
+1. Immutability: Once created, a String object's value cannot be changed.
+                 Modifications create new String objects.
+2. String Pool: Java maintains a pool of strings for efficiency.
+When a new string is created, it's checked against the pool for a match to reuse.
+3. Comparing: equals() method for value comparison, == operator checks reference equality.
+
+image from whatsapp
+
+4. Concatenation: Strings can be concatenated using the + operator, but each concatenation creates a new String.
+5. Methods: Provides methods like length(), substring(), equals), compareTo(), indexOf(), for various operations.
+6. Memory: Being immutable, strings can use more memory when frequently modified.
+
+
+Printf specifier           Data type
+%s                         String of text
+%f                         floating point value (float or double)
+%e                         Exponential, scientific notation of a float or double
+%b                         boolean true or false value
+%c                         Single character char
+%d                         Base 10 integer, such as a Java int, long, short or byte
+%o                         Octal number
+%x                         Hexadecimal number
+%%                         Percentage sign
+%n                         New line, aka carriage-return
+%tY                        Year to four digits
+%tT                        Time in format of HH:MM:SS (ie 21:46:30)
+
+
+
+printf flag           Purpose
+-                     Aligns the formatted printf output to the left
++                     The output includes a negative or positive sign
+(                     Places negative numbers in parenthesis
+0                     The formatted print output is zero padded
+,                     The formatted output includes grouping separators
+<space>               A blank space adds a minus sign for negative
+                      numbers and a leading space when positive
+
+
+
+% [flags] [width] [.precision] specifier-character
+
+
+Pattern          Data              Printf Output
+'%s'             Java                 ' Java'
+'%15s'           Java              '           Java'
+'%-15s           Java              'Java           '
+'%-15S'          Java              'JAVA           '
+
+'%d'          123,457,890              123457890
+%, 15d'       123,457,890          '   123,457,890'
+%+, 15d'      123457890           '  +123,457,890'
+%-+, 15d'     123457890           '+123, 457,890   '
+'%0,15d'      123457890              '0000123,457,890'

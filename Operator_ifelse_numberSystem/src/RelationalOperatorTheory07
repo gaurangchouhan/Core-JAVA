@@ -1,0 +1,14 @@
+4.7 Relational Operator
+
+* Equality
+• == Checks value equality.
+
+* Inequality
+• != Checks value inequality.
+
+* Relational
+• > Greater than.
+• < Less than.
+• >= Greater than or equal to.
+• <= Less than or equal to.
+Order of Relational operators is less than arithmetic operators

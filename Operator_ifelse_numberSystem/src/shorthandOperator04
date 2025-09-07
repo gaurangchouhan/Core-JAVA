@@ -1,0 +1,18 @@
+SHORTHAND OPERATOR
+
+Operator         Name of         Example         Equivalent
+symbol         the operator                      construct
+  +=             Addition         x += 4；        x = x + 4;
+                Assignment
+  -=           Substraction       x -= 4；        x = x - 4;
+                Assignment
+  *=          Multiplication      x *= 4；        x = x * 4;
+                Assignment
+  /=             Division         x /= 4;         x = x / 4;
+                Assignment
+  %=             Remainder        x %= 4;         x = x % 4;
+                Assignment
+
+
+
+

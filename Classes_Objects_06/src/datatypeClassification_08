@@ -1,0 +1,19 @@
+6.8 Primitive vs Reference Types
+
+                        Data Types in Java
+                      ↙                    ↘
+   Primitive (Intrinsic)                   Non-Primitive (Derived)
+            ⬇                                        ⬇️
+         int a = 5;                     iske liye heap me jana padta h
+            ⬇                           reference ka object lekr aana
+     iske liye heap me jana             padta h to execute
+     nhi padta object nhi
+     bnana padta                        reference by default ek integer
+     compile time ya load time          hi hota h
+     pr hi  memory declare krta h JVM
+
+1. Memory: Primitives store actual values; reference types store addresses to objects.
+2. Default Values: Primitives have specific defaults like 0 or false; reference types default to null.
+3. Speed: Access to primitives is generally faster.
+4. Storage Location: Primitives are stored in the stack; reference types are stored in the heap.
+5. Comparison: Primitives compared by value; reference types compared by reference.

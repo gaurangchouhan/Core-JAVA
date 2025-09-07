@@ -1,0 +1,39 @@
+4.9 Operator Precedence
+
+Operator Precedence: Determines the evaluation order of operators
+                     in an expression based on their priority levels.
+
+Associativity: Defines the order of operation for operators with
+               the same precedence, usually left-to-right or right-to-left.
+
+
+
+Operator Type     Category        Precedence         Associativity
+
+Unary             postfix          a++, a--          Right to left
+                  prefix      ++a,--a, +a, -a, ~,!   Right to left
+
+Arithmetic     Multiplication      *, /, %           Left to Right
+                 Addition           +,-              Left to Right
+
+Shift              Shift           <<,>>,>>>         Left to Right
+
+Relational      Comparison        <, >, =<,=>,       Left to Right
+                                   instanceOf
+                 equality            ==,!=           Left to Right
+
+Bitwise       Bitwise AND             &              Left to Right
+              Bitwise exclusive       ^              Left to Right
+              OR
+              Bitwise inclusive       |              Left to Right
+              OR
+
+Logical        Logical AND            &&             Left to Right
+               Logical OR             ||             Left to Right
+
+
+Ternary         Ternary               ?:             Right to Left
+
+Assignment     assignment      =，+=，-=，*=，/=，     Right to Left
+                              %=，&=，^=，|=, <<=
+

@@ -1,0 +1,9 @@
+3.6 Escape_2
+
+Escape_2 Sequence                            Description
+\t                             Insert a tab in the text at this point.
+\b                          Insert a backspace in the text at this point.
+\n                            Insert a newline in the text at this point.
+\'                     Insert a single quote character in the text at this point.
+\"                     Insert a double quote character in the text at this point.
+\\                       Insert a backslash character in the text at this point.

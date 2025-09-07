@@ -1,0 +1,30 @@
+5.2 What is a loop?
+
+1. Code that runs multiple times based on a condition.
+2. Repeated execution of code.
+3. Loops automate repetitive tasks.
+4. Types of Loops: while, for, do-while.
+5. Iterations: Number of times the loop runs.
+
+                               Start
+                                 ⬇️
+             Stop ⬅️ false ⬅️ Condition ⬅⬅⬅⬅⬅
+                                 ⬇️            ⬆
+                                true     Update counter
+                                 ⬇️            ⬆
+                          Code inside loop ➡➡➡➡➡
+
+
+* While loop
+
+Syntax -
+int a=something;              // initialization
+while(condition){
+ //what do u want to print
+increment/decrement;
+}
+
+1. Iterations: Number of times the loop runs.
+2. Used for non-standard conditions.
+3. Repeating a block of code while a condition is true.
+4. Remember: Always include an update to avoid infinite

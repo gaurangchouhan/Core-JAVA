@@ -1,0 +1,7 @@
+3.8 Type Conversion
+
+* Automatic Type Conversion (Widening - implicit or Coercion)
+  byte ➡️ short ➡️ int ➡️ long ➡️ float ➡️ double
+
+* Narrowing (explicit or Casting)
+  byte ⬅️ short ⬅️ int ⬅️ long ⬅️ float ⬅️ double

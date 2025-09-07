@@ -1,0 +1,5 @@
+* Use BODMAS rule
+  (8-3*3) ➡️ (8-9) ➡️ (-1)
+
+* if same operator use then progress in left ➡️ right
+  (15/3/3) ➡️ (5/3) ➡️ (3.67)

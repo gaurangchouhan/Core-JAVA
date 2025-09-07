@@ -1,0 +1,20 @@
+6.2 Instance Variables and Methods
+
+Class ➡️     Cat                                    class
+           ↙   ↘                                     ⬇️
+Properties       Methods                            Car
+Four legs          Lie                            ↙     ↘ 
+Mustache           Mew                   Methods          Attributes
+Tail              Jump                  refuel()            fuel
+Fluffy           Scratch                getFuel()          maxSpeed
+  ⬇️                ⬇️                  setSpeed()
+They are         They are              getSpeed()
+called           called                  drive()
+Instance         Instance
+Variables        Methods
+                   ⬇️
+                Non-static
+
+
+
+

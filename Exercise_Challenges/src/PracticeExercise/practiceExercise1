@@ -1,0 +1,11 @@
+Answer in True/False:
+1. Computers understand high level languages like Java, C.  (false)
+2. An Algorithm is a set of instructions to accomplish a task.  (true)
+3. Computer is smart enough to ignore incorrect syntax.  (false)
+4. Java was first released in 1992. (false)
+5. Java was named over a person who made good coffee.  (false)
+6. ByteCode is platform independent.   (true)
+7. JDK is a part of JRE.   (false)
+8. It's optional to declare main method as public.  (false)
+9. class file contains machine code.  (true)❌  "class file contain byte code"
+10. println adds a new line at the end of the line. (true)

@@ -1,0 +1,12 @@
+* Int to String
+Methods
+1. String s = String.valueOf(number)
+2. String s = String.valueOf(number)
+3. String s = String.valueOf(number)
+4. String s = String.valueOf(number)
+
+
+* String to Int
+Methods
+1. int num = Integer.parseInt(str)
+2. int num = Integer.valueOf(str)

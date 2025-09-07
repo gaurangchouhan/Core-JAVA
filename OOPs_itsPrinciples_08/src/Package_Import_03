@@ -1,0 +1,34 @@
+8.3 Import & Packages
+
+             import       java.     util.        Scanner;
+                           ⬇️         ⬇️            ⬇️
+                        java naam  uske andr    uske andr
+                            ka     util naam   Scanner naam
+                        package h  ka ek aur    ki class h
+                                   package h
+
+
+1. Package Definition: A package in Java is a namespace that organizes classes
+                       and interfaces, preventing naming conflicts.
+2. Package Declaration: Packages are declared at the beginning of a Java source file
+                        using the package keyword followed by the package name.
+3. Import Statement: An import statement in Java is used to bring in classes or
+                     interfaces from other packages into the current file,
+                     making them accessible without using a fully qualified name.
+
+4. Types of Import:
+• Single-Type Import: Imports a single class or interface from a package
+                      (e.g., import java.util.List;).
+
+• On-Demand Import: Imports all classes and interfaces from a package
+                    (e.g., import java.util.*;).
+
+5. Avoiding Collisions: Packages help in avoiding name collisions by categorizing
+                        similar classes together.
+
+6. Built-in Packages: Java comes with built-in packages like java.lang (automatically imported),
+                      java.util, java.io, etc.
+
+
+
+

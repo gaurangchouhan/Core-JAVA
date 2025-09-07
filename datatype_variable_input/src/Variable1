@@ -1,0 +1,54 @@
+3.1 Variable
+
+* Variables are like containers used for storing data values
+
+* memory allocation -
+  memory disk ➡️ memory cell ➡️ address ➡️ store data
+
+* Variable Declaration
+   int      age          =            20;
+   ⬇️        ⬇️          ⬇️            ⬇️
+  data    variable   assignment   int literal
+  type                   ⬇️
+               equals to ke right ki
+               value ko left side me
+               jo variable hota h usme
+               store krta h
+
+
+  "jb apn age ko call krte h to wo age ke address pr jayega
+  aur memory me jo bhi byte code me value hogi
+  usse convert krke print kr dega."
+
+3.2 Data Types (1 byte = 8 bits)
+    a. byte
+    b. short
+    c. int
+    d. float
+    e. double
+    f. char
+    g. long
+    h. boolean
+
+3.3 Naming Convention
+
+    a. camelCase
+       Example: myVariableName
+
+    b. snake_case
+       Example: my_variable_name
+
+    c. Kebab-case
+       Example: my-variable-name
+
+    d. Keep a Good and Short Name
+       Example: age, firstName, isMarried
+
+3.4 Keywords
+    Only used by language we can't use it as a class name
+    Example: super, default, switch, break, int, etc.
+
+
+
+
+

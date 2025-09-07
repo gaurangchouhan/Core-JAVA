@@ -1,0 +1,14 @@
+5.5 Argument vs Parameter
+
+1. Input values that a function takes.
+2. Parameters put value into function, while return gets value out.
+3. Example: "Ek packet dahi laao"
+4. Naming Convention: Same as variable names
+5. Parameter vs Argument
+6. Examples: System.out.print, Scanner.nextInt(), are functions we have already
+7. Multiple Parameters: Functions can take more than one.
+8. Default Value: Can set a default value for a parameter.
+
+
+* Parameter => When we define definition of any function then we call it PARAMETER.
+* Argument => When some value pass in any function then we call it ARGUMENT.

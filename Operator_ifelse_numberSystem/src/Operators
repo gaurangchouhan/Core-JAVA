@@ -1,0 +1,3 @@
+4.1 Assignment Operator
+    Assigns the right-hand operand's value to the left-hand operand.
+    Example: int a = 5;

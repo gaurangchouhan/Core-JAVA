@@ -1,0 +1,22 @@
+10.6 Custom Exceptions
+
+1. Custom exceptions are user-defined exception classes that extend either
+   Exception (for checked exceptions) or  RuntimeException (for unchecked exceptions)
+
+2. They are created to represent specific error conditions relevant to an application.
+
+public class TemperatureException extends Exception (
+     private double degrees;
+     public TemperatureException (double degrees) {
+          this.degrees = degrees;
+     }
+
+     public String getMessage(){    ⬅️⬅️⬅️⬅️⬅️⬅️⬅️⬅️⬅️⬅️⬅️⬅️⬅️⬅️    Override of Exception's
+            return "The temperature (" + degrees + "C)         getMessage() method
+            isn't in the normal range.";
+     }
+
+     public double getDegrees() {   ⬅️   (New method)
+          return degrees;
+     }
+}

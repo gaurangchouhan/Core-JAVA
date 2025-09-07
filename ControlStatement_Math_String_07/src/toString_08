@@ -1,0 +1,7 @@
+7.8 toString Method
+
+1. Function: toString() provides a string representation of an object.
+2. Inheritance: It's inherited from the Object class.
+3. Default Format; By default, returns class name, "@", and hashcode.
+4. Overriding: Commonly overridden in custom classes for meaningful output.
+5. Implicit Call: Automatically called in string concatenation.

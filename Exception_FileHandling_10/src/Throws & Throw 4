@@ -1,0 +1,93 @@
+10.4 Throw and Throws
+
+throws Keyword:
+1. Declares that a method may throw one or more exceptions.
+2. Used in the method signature to indicate that the method might throw exceptions of specified types.
+3. A method declared with throws requires the calling method to handle or further declare the exception.
+
+* throws ka mtlb jo bhi isko use krega wo zimmedari uski ho jayegi ki ye wo method h
+  jo exception throw krta h pehle hi bata rha h to aap isse jb bhi call kre to dhyaan rkhna
+
+public void printName(String name)
+    throws IllegalArgumentException{
+    if (name.contains ("-")) {
+        throw new IllegalArgumentException
+        ("Name contains -");
+    }
+          System.out.println(name);
+}
+
+throw Keyword:
+1. Used to explicitly throw an exception from any method or block of code.
+2. You can throw either a new instance of an exception or an existing exception object using throw.
+3. Example: throw new ArithmeticException("Division by zero");
+
+void teachClass () throws BookNotFoundException {
+         boolean bookFound = locateBook () ;
+         if (bookFound){
+            throw new BookNotFoundException () ;
+         }else{
+             readBook() ;
+             explainContents() :
+         }
+     }
+
+* throws jo h wo declare krne ke liye ki me exception throw kr skta hu
+* throw actually exception ko throw krne ke liye
+
+
+                      Exception Occurred
+                             ⬆️
+                        FirstMethod()
+                                        ↩️
+                        SecondMethod()
+        Calling Flow                    ↩️     Exception caught flow
+                        ThirdMethod()
+                                        ↩️
+                            Main()
+
+                         Call stack
+
+1. jb apn divided by zero kr rhe the to jb ye exception throw ki gye
+2. to sbse pehle dekhega ki exception ko try block me rkha hua h ki nhi
+3. agr rkha hua h to dekhega koi na koi catch match ho rha h ki nhi
+4. agr maan lo waha try catch nhi h to wo uss method ko turant hi bnd kr dega aur
+   maan lijiye ki uss method ke liye throw to return ki tarah chalega aur method ho jayega bnd
+
+* agr A method h aur usne B ko call kiya aur B ki kisi line me exception aa gye
+  to B turant bnd ho jayega aur fir exception aa jayegi A me aur fir waha se mana
+  jayega ki exception throw hue h
+
+* fir JVM same cheez A me dekhega ki try catch likha hua h agr likha h to print kr dega
+  werna fir wo dusri method me jayega jaha A ko call kiya h
+
+
+* Difference between Throw & Throws
+
+                     throw                           throws
+
+         Java throw keyword is used to       Java throws keyword is used to
+         explicitly throw an exception.          declare an exception.
+
+         Checked exception cannot be         Checked exception can be
+         propagated using throw.             propagated with throws.
+
+         If we see syntax wise, throw        If we see syntax wise, throws
+         is followed by an instanceof        is followed by exception class names
+         Exception class
+         Example :
+         throw new NumberFormatException     Example: throws 10Exception,SQLException
+                          ("invalid.");
+
+         The keyword throw is used inside    throws clause is used in
+         method body.                        method declaration (signature).
+
+         By using throw keyword in java      By using throws you can
+         you cannot throw                    declare multiple exceptions.
+         more than one exception.            Example:
+         Example:                             public void method() throws IOException,
+         throw new IOException                                                         SQLException.
+         ("Connection failed!!")
+
+
+

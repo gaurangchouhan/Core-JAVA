@@ -1,0 +1,30 @@
+5.3 What is a Functions/Methods?
+
+1. Definition: Blocks of reusable code.
+2. DRY Principle: "Don't Repeat Yourself" it Encourages code reusability.
+3. Usage: Organizes code and performs specific tasks
+4. Naming Rules: Same as variable names: cámelCase
+5. Example: "Beta Gas band kar de"
+
+* Syntax:
+
+        return-type                         parameter-list
+             ⬆                                   ⬆
+public      int      addition       (int operand1, int operand2)   {
+  ⬇                    ⬇
+modifier          function name
+
+         int sum;
+         sum = operand1 + operand2;
+         return sum;
+}
+
+1. Use function keyword to declare.
+2. Follows same rules as variable names.
+3. Use () to contain parameters.
+4. Invoke by using the function name followed by ().
+5. Fundamental for code organization and reusability.
+
+* class ke andr hi saare function hote h
+* koi bhi function class ke bahaar nhi likh skte h isliye method bol skte h 
+

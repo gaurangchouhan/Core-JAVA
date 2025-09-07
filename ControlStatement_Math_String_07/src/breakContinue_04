@@ -1,0 +1,8 @@
+7.4 Using break & continue
+
+1. Break lets you stop a loop early, or break out of a loop
+2. Continue is used to skip one iteration or the current iteration
+3. In while loop remember to do the increment manually before using continue
+
+break => iska use jb hota h jb apn ko loop ke kisi point se bahar nikalna
+continue => iska use jb hota h jb apn ko loop ki kisi condition ko skip krke dusri condition pr jana ho  

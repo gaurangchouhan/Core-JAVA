@@ -1,0 +1,14 @@
+9.1 What is Abstraction?
+
+1. Core Principle: Abstraction hides complex implementation details,
+                   focusing only on essential features.
+
+2. Focus on Functionality: Emphasizes what an object does, not how it does it,
+                           through clear interfaces.
+
+3. Simplifies Complexity: It reduces complexity by showing only
+                          relevant information in class design.
+
+4. Real-World Modelling: Abstraction allows creating objects that
+                         represent real-life entities with key attributes and behaviours.
+

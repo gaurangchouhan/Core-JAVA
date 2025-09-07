@@ -1,0 +1,42 @@
+6.10 Garbage Collection & Finalize
+
+1. Automatic Process: Garbage collection is managed by the Java Virtual Machine (JVM),
+                      running in the background.
+
+2. Object Eligibility: Objects that are no longer reachable,
+                       meaning no active references to them,
+                       are eligible for garbage collection.
+
+3. No Manual Control: Unlike languages like C++,
+                      Java developers cannot explicitly deallocate memory.
+                      Garbage collection is automatic and non-deterministic.
+
+4. Generational Collection: Java uses a generational garbage collection strategy,
+                            which divides memory into different regions (young, old, and permanent generations)
+                            based on object ages.
+
+  ➡️ jo bhi heap me esa object h jiska reference nhi h stack me uss garbage collection ko htana h
+     GC jayega hr ek object ke pas dekhega uska reference h ya nhi agr nhi h to uss object ko bahar
+     fek dega aur uss memory ko empty declare kr dega. fir jb koi bhi LIKHEGA new to wo object dobara
+     uss heap ki location me rkha jayega
+
+  ➡️ Example whatsapp pr dekh lena smjhna ho to part 2(4:18:11)
+
+5. Heap Memory: Garbage collection occurs in the heap memory,
+                where all Java objects reside.
+
+6. Performance Impact: Garbage collection can affect application performance,
+                       particularly if it runs frequently or takes a long time to complete.
+
+
+* Finalize Concept
+
+1. Finalization: Before an object is garbage collected, the finalizel) method may be called,
+                 giving the object a chance to clean up resources. However,
+                 it's not guaranteed to run, and its usage is generally discouraged.
+
+2. Optimization: Developers can optimize the process indirectly through
+                 code practices like setting unnecessary object references to null.
+
+3. System.gc() Call: While System.gc() suggest that the JVM performs garbage collection,
+                     it's not a guarantee.

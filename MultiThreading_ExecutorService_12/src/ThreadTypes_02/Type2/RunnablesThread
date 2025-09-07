@@ -1,0 +1,32 @@
+2. Runnable Thread
+
+Step 1: Define a Class that implements Runnable
+
+public class PrintRunnable implements Runnable
+// Step 2: Override the run() Method
+
+@Override
+public void run() &
+// First Task
+for (int i = 1; i <= 1000; i++) {
+System.out.printf("%d:%c ", i, targetChar);
+System.out.printf("\n%c Task Done\n", targetChar);
+}
+
+private final char targetChar;
+
+public PrintRunnable(char targetChar) {
+this.targetChar = targetChar;
+}
+
+public static void main (String... args) {
+// Step 3: Create an Instance of Your Class
+PrintRunnable t1 = new PrintRunnable (targetChar: '*');
+
+// Step4: Wrap your class with a thread
+new Thread (t1) .start(); // Start the first thread
+PrintRunnable t2 = new PrintRunnable ( targetChar: '$');
+new Thread (t2) .start();
+
+* In the main method, two threads (t1 and t2) are created and started.
+   They will execute independently and print their values.

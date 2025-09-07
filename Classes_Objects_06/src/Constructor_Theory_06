@@ -1,0 +1,47 @@
+6.6 Constructors
+
+1. Purpose: Constructors initialize new objects and set initial states for the object's attributes.
+2. Naming: A constructor must have the same name as the class in which it is declared.
+3. No Return Type: Constructors do not have a return type, not even void.
+4. Automatic Calls: A constructor is automatically called when an instance of a class is created.
+
+* Types of Constructors
+
+1. Default Constructor: If no constructor is explicitly defined,
+                        Java provides a default constructor
+                        that initializes all member variables to default values.
+
+2. Parameterized Constructors: Constructors can have parameters to pass values
+                              when creating an object, allowing for different
+                              initialization.
+
+* Chaining in Constructor
+
+1. Within Same Class: Using this() to call another constructor in the same class.
+2. First Statement: this() must be the first statement in a constructor.
+3. No Loop: Constructor chaining can't form a loop; it must have a termination point.
+
+Example:-
+
+student(int id, String msg){
+this.id = id;
+this.msg = msg;
+}
+student (int id){
+this(id, "hi")
+}
+student (string msg){
+this(msg, 101)
+}
+
+* Code Block
+
+1. Scope: Code blocks {} determine the scope of variables.
+2. Local Variables: Variables inside a block are not accessible outside it.
+3. Initialization Block: Blocks without static run each time an instance is created.
+4. Static Block: Blocks with static run once when the class is loaded.
+
+* Steps involve in Execution of block code
+
+JVM class ka     fir uss class     JVM ko pehle            pehle wo block      Ab constructor
+naam padhega  ➡️  ko dhondega   ➡️  block code dikhega  ➡️  code run krenga ➡️  run krenga

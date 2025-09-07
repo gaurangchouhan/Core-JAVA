@@ -1,0 +1,39 @@
+7.3 Types of loop
+
+1. do-while loop
+
+* Syntax:
+
+do {                               do me jvm aayega do ka code execute krega
+    // Body of the loop             (1st time chalega hi)
+}
+while (condition);           ➡️    fir jvm while ki condition ko
+                                   check krega agr condition true
+                                   hue to wapas do me jayega werna
+                                   exit ho jayega
+
+A. Executes block first, then checks condition.
+B. Guaranteed to run at least one iteration.
+C. Unlike while, first iteration is unconditional.
+D. Don't forget to update condition to avoid infinite loops.
+
+
+2. For-Loop
+
+* Syntax:
+
+for (initialisation; condition; update){
+// Body of the loop
+}
+
+A. Standard loop for running code multiple times.
+B. Generally preferred for counting iterations.
+
+3. For-Each Loop
+
+1. A method for array iteration, often preferred for readability.
+2. Parameters: One for item, optional second for index.
+3. Using return is similar to continue in traditional loops.
+4. Not straightforward to break out of a forEach loop.
+5. When you need to perform an action on each array element and
+   don't need to break early.

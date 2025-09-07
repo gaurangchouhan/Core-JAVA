@@ -1,0 +1,16 @@
+7.6 Random Numbers & Math class
+
+Key Methods:
+1. abs(): Absolute value
+2. ceil(): Rounds up.
+3. floor(): Rounds down.
+4. round(): Rounds to nearest integer.
+5. max(), min(): Maximum and minimum of two numbers.
+6. pow(): Power calculation.
+7. sqrt(): Square root.
+8. random(): Random number generation.
+9. exp(), log(): Exponential and logarithmic functions.
+10. Trigonometric functions: sin(), cos(), tan()
+
+*. Static Class: Math methods are static and accessed directly.
+*. Constants: Includes Pl and E for n and the base of natural logarithms.

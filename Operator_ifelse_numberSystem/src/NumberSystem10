@@ -1,0 +1,38 @@
+4.10 Intro to Number System
+
+Number System       Base or Radix        Digits or symbols
+Unary                     1                    0,1
+Decimal                   10            0,1,2,3,4,5,6,7,8,9
+
+* Decimal Number System
+    Decimal Number System is a base-10 system
+    that has ten digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+    Example: (7,392) = 7*10^3 + 3*10^2 + 9*10^1 + 2*10^0
+
+* Binary Number System
+    The coefficients of the binary number system
+    have only two possible values: 0 and 1.
+
+    Example: (11010.11) value in Decimal?
+    (11010.11) = 1*2^4 + 1*2^3 + 0*2^2 + 1*2^1 + 0*2^0 + 1*2^-1 + 1*2^-2
+               = 26.75
+
+
+Decimal            Binary
+0                  0000
+1                  0001
+2                  0010
+3                  0011
+4                  0100
+5                  0101
+6                  0110
+7                  0111
+8                  1000
+9                  1001
+10                 1010
+11                 1011
+12                 1100
+13                 1101
+14                 1110
+15                 1111

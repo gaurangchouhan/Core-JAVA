@@ -1,0 +1,12 @@
+6.1 Process vs Object Oriented Programming
+
+        Procedural Oriented Programming                   Object Oriented Programming
+
+
+        Global Data→→       ⬅Global Data                   Data              Data
+         ⬇          ⬇     ⬇         ⬇                  Functions ➡➡➡➡➡➡➡ Functions
+         ⬇          ⬇     ⬇         ⬇                          ↖        ↗
+      Function1     Function2     Function3                       Functions
+         ⬇             ⬇           ⬇                               Data
+       Local          Local        Local
+       Data           Data         Data

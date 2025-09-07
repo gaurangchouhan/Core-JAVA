@@ -1,0 +1,39 @@
+12.2 Creating a Thread
+
+* agr me multi-threading me kaam kr rha hu to ye bata pana bohot mushkil
+  h ki konsa kaam pehle hoga konsa baad me
+
+* Types of MultiThreading
+
+1. Extending Thread Class
+
+Step 1: Define a Class that Extends Thread
+
+public class PrintTask extends Thread{
+// Step 2: Override the run() Method
+
+public void run(){
+// First Task
+for (int i = 1; i <= 1000; i++) {
+System.out.printf ("%d:% ", i, targetChar);
+System.out.printf("\n%c Task Done\n", targetChar);
+}
+}
+
+private final char targetChar;
+
+public PrintTask(char targetChar) {
+this. targetChar = targetChar;
+}
+
+public static void main(String... args) {
+// Step 3: Create an Instance of Your Class
+PrintTask t1 = new PrintTask( targetChar: '*');
+t1.start()
+
+PrintTask t2 = new PrintTask( targetChar: '$');
+t2. start; // Start the se thread
+}
+
+* In the main method, two threads (t1 and t2) are created and started.
+  They will execute independently and print their values.

@@ -1,0 +1,10 @@
+8.1 Intro of OOPs
+
+Encapsulation       Abstraction        Inheritance          Polymorphism
+When an object     Hides complex       Entities can        Entities can have
+only exposes the    details to           inherit              more than
+selected              reduce         attributes from          one form
+information.        complexity.       other entities.
+
+
+

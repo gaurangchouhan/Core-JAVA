@@ -1,0 +1,36 @@
+11.10 Generics & Diamond Operators
+
+1. They allow you to write flexible and reusable code by enabling types (classes and interfaces) to be parameters when defining classes, interfaces, and methods.
+2. Generics provide compile-time type safety by allowing you to enforce that certain objects are of a specific type.
+3. With generics, you don't need to cast objects because the type is known.
+4. Generics are denoted by angle brackets <>, e.g., List<String> means a list of strings.
+5. Diamond Operator: Introduced in Java 7, the diamond operator <> allows you to infer
+   the type parameter from the context, simplifying instantiation of generic classes.
+
+* Generics
+
+1. Generics means parameterized types.
+2. They allows us to write code that works with different data types
+   using a single class, interface or method.
+3. we use type parameters (like <T>) to make the code reusable and type-safe.
+
+* Types of Generics
+
+1. Generic Class: A generic class is like a regular class but uses type parameters (like <T>).
+                  It can accept one or more types
+
+2. Generic Method: A generic method is a method that can work with different data types
+                   using a type parameter.
+                ➡️ It lets you write one method that works for all types,
+                   instead of repeating the same logic.
+
+
+* Limitation of Generics
+
+1. When we declare an instance of a generic type, the type argument passed to the
+   type parameter must be a reference type. We cannot use primitive data types
+   like int, char.
+
+2. Generic Types Differ Based on their Type Arguments
+➡️ During compilation, generic type information is erased which is also known as
+  type erasure.

@@ -1,0 +1,14 @@
+10.8 FileReader class
+
+1. The FileReader class is used for reading streams of characters from files.
+
+2. It's a character-based stream, meaning it reads characters (as opposed to bytes).
+   This makes it suitable for reading text files.
+
+3. Constructors:
+• FileReader(String fileName): Creates a FileReader object to read from a file with the specified name.
+• FileReader(File file): Creates a FileReader object to read from the specified File object.
+
+4. Common Methods:
+• read): Reads a single character and returns it as an integer. Returns -1 if the end of the stream is reached.
+• read(char[] cbuf): Reads characters into an array and returns the number of characters read.

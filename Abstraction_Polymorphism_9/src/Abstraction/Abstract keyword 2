@@ -1,0 +1,28 @@
+9.2 Abstract Keyword
+
+1. Abstract Class: Used to declare non-instantiable abstract classes that serve as base classes.
+
+2. Abstract Method: Defines methods without implementations, requiring subclasses to provide specific functionality.
+➡️ Abstract method me define nhi kiya jata ki method kya print kr rhi h
+   e.g- public abstract void sound();
+
+➡️ ab abstract method ki definition dena uske children ki responsibility bn jayegi
+  e.g- @Override
+           public void sound() {
+               System.out.println("brummmmmmm...... ");
+           }
+
+3. Mandatory Implementation: Subclasses must implement all abstract methods of an abstract class.
+
+4. Design Flexibility: Allows for flexible class design by defining a contract for subclasses.
+
+* kisi bhi class ke pehle agr abstract lga de to wo class sirf inherit krne ke liye use
+  hoti h uska object bnana possible nhi h
+
+  public abstract class building{
+
+  psvm
+  building build = new building()  ❌ Error
+  }
+
+* normal abstract method public bhi ho skta h protected bhi
