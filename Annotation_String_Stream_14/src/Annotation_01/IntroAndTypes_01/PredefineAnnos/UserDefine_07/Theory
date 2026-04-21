@@ -1,0 +1,55 @@
+
+
+1. What are User-Defined Annotations?
+
+➡ Java gives us some built-in annotations.
+
+➡ But we can also create our own custom annotations → these are called user-defined annotations.
+
+➡ Useful when you want to give special meaning to your code for frameworks, tools, or custom processing.
+👉 Think of them as labels you design yourself.
+
+
+2. How to Create a User-Defined Annotation?
+
+👉 Syntax:
+@interface AnnotationName {
+    // elements (optional)
+}
+Example (simple):
+@interface MyAnnotation {
+    String value(); // an element
+}
+Usage:
+@MyAnnotation(value = "Hello")
+class Test {}
+
+3. Rules for User-Defined Annotations
+
+* Use @interface keyword (not class or interface).
+
+* Elements inside annotation look like methods, but they:
+  ➡ Cannot have parameters.
+  ➡ Cannot throw exceptions.
+  ➡ Must have default values or must be provided when used.
+
+* Allowed return types for elements:
+  ➡ Primitive types (int, float, boolean, etc.)
+  ➡ String
+  ➡ Class
+  ➡ enum
+  ➡ Another annotation
+  ➡ Arrays of above types
+
+
+4. Annotation Elements Example
+
+@interface MyAnnotation {
+    int count();
+    String message() default "Hello"; // default value
+}
+
+@MyAnnotation(count = 5)
+class Test {}
+
+👉 Here message is optional because it has a default value.

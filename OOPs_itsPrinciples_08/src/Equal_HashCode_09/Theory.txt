@@ -4,7 +4,7 @@
       public boolean equals(Object obj) {
           (  obj  instanceof   Person  )
                         ⬇️
-          obj Person class ka instance h ya object h
+          obj Person class ka instance ya object h
           ya nahi
       }
 
@@ -31,7 +31,7 @@
 
 * 1000 objects h uski kuch na kuch value h
 
-1. sbke liye pehle hasd code call krenge
+1. sbke liye pehle hash code call krenge
 a. hash code equal nhi to value equal nhi
 
 b.         hash code unequal

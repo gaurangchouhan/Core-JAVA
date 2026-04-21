@@ -1,0 +1,69 @@
+* What is Annotation_01?
+➡  it is an extra info which was going to add on ur code.
+
+➡  if u add extra info in ur code ur existing program, files, projects will not be
+   affected the feature purpose in which u written the code
+   rather then the extra features will be added in this.
+
+➡ Annotations help to associate metadata i.e. instance variables, constructors, methods, classes, etc.
+
+➡ It works based on the mechanism of interfaces
+
+➡ That is called Annotation_01.
+
+* Types of Annotation_01
+
+                                  Annotation_01
+                                ↙            ↘
+                            Build-in       Costume
+                          ↙         ↘
+  General Purpose Annotations      Meta Annotations
+     (java.lang package)      (java.lang.annotation package)
+         @Override                    @Inherited
+        @Deprecated                   @Documented
+       @SafeVar Args                  @Target
+     @SuppressWarnings                @Retention
+     @FunctionalInterface             @Repeatable
+
+
+* @ -  it inform complier that this is not a interface, its an annotation type
+       which u can add as a suppliment info to ur source code.
+* only few interface keywords then it act as a normal interface
+* Annotation_01 works on the mechanism of interface
+
+* Categories of Annotations
+
+1. Marker Annotations
+   ➡  These annotations contain no members, attributes, etc.
+   ➡ @Override is an example of Marker Annotation_01.
+
+2. Single value Annotations
+   ➡ These annotations contain only one member and allow a shorthand form
+     of specifying the value of the member.
+   ➡ Example :- @TestAnnotation(“testing”);
+
+3. Full Annotations
+   ➡ These annotations consist of multiple data members, names, values, pairs.
+   ➡ Example:- @TestAnnotation(owner=”Rahul”, value=”Class Geeks”)
+
+4. Type Annotations
+   ➡ These annotations can be applied to any place where a type is being used.
+   ➡ These are declared annotated with @Target annotation.
+
+5. Repeating Annotations
+   ➡ These are the annotations that can be applied to a single item more than once.
+   ➡ For repeatable annotation @Repeatable, it defined in the java.lang.annotation package.
+
+   * In Java, when you use an annotation multiple times on the same thing, Java needs a way to store all those annotations together.
+     That "storage" is what we call the container
+
+   Example:-
+
+   @Game("Cricket")                                         @Games({
+   @Game("Football")        Here @Game is repeatable.          @Game("Cricket"),
+   @Game("Hockey")        ➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡        @Game("Football"),
+   class Sports {}                                             @Game("Hockey")
+                                                            })
+                                                            class Sports {}
+
+* So the container (@Games) is just an annotation that holds an array of the repeatable annotation (@Game).

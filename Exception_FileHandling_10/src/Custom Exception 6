@@ -5,7 +5,7 @@
 
 2. They are created to represent specific error conditions relevant to an application.
 
-public class TemperatureException extends Exception (
+public class TemperatureException extends Exception {
      private double degrees;
      public TemperatureException (double degrees) {
           this.degrees = degrees;

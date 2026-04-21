@@ -3,7 +3,7 @@ public class typeConversion_3 {
         float myNum = 23;   //Automatic Type Conversion 3
         System.out.println(myNum);
 
-        double urNum = (double) 3.43f;      // Narrowing Type Conversion 3
+        int urNum = (int) 3.43;      // Narrowing Type Conversion 3
         System.out.println(urNum );
 
     }

@@ -7,7 +7,6 @@ Associativity: Defines the order of operation for operators with
                the same precedence, usually left-to-right or right-to-left.
 
 
-
 Operator Type     Category        Precedence         Associativity
 
 Unary             postfix          a++, a--          Right to left

@@ -7,6 +7,6 @@ public class getterTest {
         Car car = new Car("white", "maruti",
                 12, 250000);
         car.setColor("blue");
-        System.out.printf("%s, %s", car.getColor(), car.getModel()  );
+        System.out.printf("%s, %s", car.getColor(), car.getModel());
     }
 }

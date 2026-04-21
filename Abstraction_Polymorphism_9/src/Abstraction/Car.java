@@ -11,5 +11,4 @@ package Abstraction;
     public void startVehicle() {
         System.out.println("brummmmmmm...... ");
     }
-    
  }

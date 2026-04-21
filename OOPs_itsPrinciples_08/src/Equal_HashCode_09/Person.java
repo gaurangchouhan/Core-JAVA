@@ -14,6 +14,17 @@ public class Person  {
 
     // Equals
 
+//    @Override
+//    public boolean equals(Object obj) {
+//        if (!(obj instanceof Person)){
+//            return false;
+//        }
+//        Person per = (Person) obj;
+//        return per.name.equals(name) &&
+//                per.id.equals(id) &&
+//                per.age == age;
+//    }
+
 
     @Override
     public boolean equals(Object obj) {
@@ -33,6 +44,7 @@ public class Person  {
     public void setName(){
         this.name = name;
     }
+
     public int getAge(){
         return age;
     }

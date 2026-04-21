@@ -3,7 +3,7 @@
 public class Main{
     public final String name = "John";
     public void setName (String name) {
-        this name = name;   // cannot reassign final variables
+        this.name = name;   // cannot reassign final variables
     }
 ｝
 

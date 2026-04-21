@@ -4,7 +4,7 @@ public class Car {
 
     public String color;
     public String model;
-    double fuelLevel;
+    private double fuelLevel;
     long cost0fPurchase;
 
     // Default Constructor

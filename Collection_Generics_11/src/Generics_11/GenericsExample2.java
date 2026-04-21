@@ -17,7 +17,7 @@ public class GenericsExample2<T, U> {
     }
 
     public static void main(String[] args) {
-        GenericsExample2<String, Integer> example2 = new GenericsExample2<>("apple", 12);
+        GenericsExample2<String, Integer> example2 = new GenericsExample2<>("apple", 120);
 
         System.out.println(example2.getObj1());
         System.out.println(example2.getObj2());

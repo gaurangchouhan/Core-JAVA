@@ -3,7 +3,7 @@ import java.io.IOException;
 
 public class fileReader_8 {
     public static void main(String[] args) {
-        String fileRead = "java-nxt.txt  ";
+        String fileRead = "java-nxt.txt";
 
         try(FileReader reader  = new FileReader(fileRead)) {
             int read = 0;
@@ -17,3 +17,4 @@ public class fileReader_8 {
         }
     }
 }
+

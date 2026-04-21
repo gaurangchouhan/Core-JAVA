@@ -11,11 +11,11 @@ public class problem69palindromeString {
         System.out.println("Your string is " + (isPalindrome(str) ? "Palindrome" : "Not Palindrome"));
     }
 
-    public static boolean  isPalindrome(String str){
+    public static boolean isPalindrome(String str){
         if (str.length() <= 1){
             return true;
         }
-        int  last = str.length()-1;
+        int last = str.length()-1;
         if (str.charAt(0) != str.charAt(last)){
               return false;
         }

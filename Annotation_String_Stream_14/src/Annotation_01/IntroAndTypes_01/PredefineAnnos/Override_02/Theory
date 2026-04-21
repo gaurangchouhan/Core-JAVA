@@ -1,0 +1,6 @@
+* Annotation 2: @Override
+
+➡ It is a marker annotation that can be used only on methods.
+➡ A method annotated with @Override must override a method from a Parent class.
+➡ It is used to ensure that a parent class method is actually overridden,
+  and not simply overloaded.

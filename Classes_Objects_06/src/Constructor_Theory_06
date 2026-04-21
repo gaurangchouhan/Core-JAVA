@@ -1,9 +1,11 @@
 6.6 Constructors
 
-1. Purpose: Constructors initialize new objects and set initial states for the object's attributes.
+1. Purpose: Constructors initialize new objects and set initial states for the
+            object's attributes.
 2. Naming: A constructor must have the same name as the class in which it is declared.
 3. No Return Type: Constructors do not have a return type, not even void.
-4. Automatic Calls: A constructor is automatically called when an instance of a class is created.
+4. Automatic Calls: A constructor is automatically called when an instance of a class
+                    is created.
 
 * Types of Constructors
 
@@ -12,8 +14,8 @@
                         that initializes all member variables to default values.
 
 2. Parameterized Constructors: Constructors can have parameters to pass values
-                              when creating an object, allowing for different
-                              initialization.
+                               when creating an object, allowing for different
+                               initialization.
 
 * Chaining in Constructor
 

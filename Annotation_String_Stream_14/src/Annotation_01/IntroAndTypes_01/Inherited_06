@@ -1,0 +1,12 @@
+* Annotation_01 6: @Inherited
+
+➡ @Inherited is a marker annotation that can be used only on annotation declaration.
+
+➡ @Inherited causes the annotation for a Parent class to be inherited by a child class.
+  👉 Therefore, when a request for a specific annotation is made to the child class,
+     if that annotation is not present in the child class, then its parent class is checked.
+
+➡ If that annotation is present in the superclass, and if it is annotated with @Inherited,
+  then that annotation will be returned.
+
+

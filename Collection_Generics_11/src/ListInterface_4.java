@@ -1,9 +1,10 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ListInterface_4 {
     public static void main(String[] args) {
-        List<Integer> strArr = new ArrayList();
+        List<Integer> strArr = new ArrayList<>();
         strArr.add(12);
         System.out.println();
         strArr.add(143);

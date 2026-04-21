@@ -1,0 +1,118 @@
+* Annotation 3: @SuppressWarnings
+
+1. "What is @SuppressWarnings?"
+
+➡ It is a built-in annotation in Java.
+
+➡ It tells the compiler:
+  👉 “Ignore certain warnings in this part of the code.”
+
+➡ It does not remove errors (only warnings).
+
+
+2. "Why do we need it?"
+
+➡ Sometimes the compiler shows warnings even if the code is safe or intentional.
+
+➡ Too many warnings = clutter, harder to see real issues.
+
+➡ @SuppressWarnings helps hide specific warnings that you don’t want to see.
+
+
+3. "Where can we use it?"
+
+   * We can apply it on:
+     ➡ Class
+     ➡ Method
+     ➡ Field (variable)
+     ➡ Constructor
+     ➡ Local variable
+     ➡ Parameter
+
+Basically, almost anywhere you write code.
+
+
+4. Common Warning Types (Arguments)
+
+   Argument	                   Meaning
+"deprecation"	Ignore warnings for deprecated methods/classes
+"unchecked"  	Ignore unchecked type cast warnings (mainly with generics)
+"rawtypes"   	Ignore warnings when using raw types (like List instead of List<String>)
+"serial"    	Ignore missing serialVersionUID warning in Serializable classes
+"unused"	    Ignore unused variables, parameters, or methods
+"all"       	Ignore all warnings (⚠ Dangerous, not recommended)
+
+
+6. Examples for Each Type
+
+(a) "deprecation"
+class OldCode {
+    @Deprecated
+    void oldMethod() {}
+}
+
+class Test {
+    @SuppressWarnings("deprecation")
+    void demo() {
+        OldCode obj = new OldCode();
+        obj.oldMethod(); // Warning hidden
+    }
+}
+
+(b) "unchecked"
+import java.util.*;
+
+class Test {
+    @SuppressWarnings("unchecked")
+    void demo() {
+        List list = new ArrayList(); // Raw type, unsafe
+        list.add("Hello");
+        List<String> strList = list; // Normally gives unchecked warning
+    }
+}
+
+(c) "rawtypes"
+import java.util.*;
+
+class Test {
+    @SuppressWarnings("rawtypes")
+    void demo() {
+        List list = new ArrayList(); // Using raw List
+        list.add(10);
+    }
+}
+
+(d) "serial"
+import java.io.*;
+
+@SuppressWarnings("serial")
+class MyClass implements Serializable {
+    // Normally, compiler warns: “Add serialVersionUID”
+}
+
+(e) "unused"
+class Test {
+    @SuppressWarnings("unused")
+    private int data; // Compiler warns normally: "Variable never used"
+}
+
+(f) "all"
+@SuppressWarnings("all")
+class Test {
+    private int data; // unused
+    void demo() {
+        List list = new ArrayList(); // raw + unchecked
+    }
+}
+
+
+7. Multiple Warnings Together
+
+We can suppress multiple warnings by using { }:
+@SuppressWarnings({"rawtypes", "unchecked"})
+class Test {
+    void demo() {
+        List list = new ArrayList();  // raw + unchecked
+        List<String> strList = list;  // unchecked
+    }
+}

@@ -24,14 +24,14 @@ public class problem37ArmstrongNum {
             i++;
         }
         System.out.println("Power of " + num1 + " is " + result);    //for debugging
-         return result;
+        return result;
     }
 
     public static int noOfDigit(int num){
         int digit = 0;
         while (num>0){
-            digit++;
             num /= 10;
+            digit++;
         }
         System.out.println("No. of Digit is: " + digit);    //for debugging
         return digit;

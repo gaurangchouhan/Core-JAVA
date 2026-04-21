@@ -22,10 +22,10 @@
 
 
 A. sbse pehle new thread ko create krte h
-B. fir jb wo ready ho jata h running ke liye to usse runnable ne bhejte h
+B. fir jb wo ready ho jata h running ke liye to usse runnable me bhejte h
 C. uske baad task ya to  executing process me jayega ya task yield method call krega
-   jisse wo wapas runnable me aa jayega aur durse ko run hone ka mouka dega aur
-   jb baad mouka aayega to khud run hoga
+   jisse wo wapas runnable me aa jayega aur dusre ko run hone ka mouka dega aur
+   jb baad me  mouka aayega to khud run hoga
 D. ya task running se waiting/ sleeping/ blocking me jayega jb tk running apna hath
    ka kaam complete nhi kr leta (jese camera ka access ek baar me ek hi app kr skti h
    jb tk dusre ko wait krna padta h).

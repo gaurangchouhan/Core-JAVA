@@ -12,7 +12,7 @@
 * parent wale method ko child class me redefine krna ho to usko bolte h method overriding
 
 5. Same Signature: Overridden methods must have ine same name, return type,
-                   and parameters as the meinod in the parent class.
+                   and parameters as the method in the parent class.
 
 4. Access Level: The access level cannot be more restrictive than the overridden method's
                  access level.

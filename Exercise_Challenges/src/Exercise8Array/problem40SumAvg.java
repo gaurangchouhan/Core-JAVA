@@ -18,6 +18,7 @@ public class problem40SumAvg {
             sum += arr[i];
             i++;
         }
+
         System.out.println("Sum of Array of element: " + sum);
         int Average = sum/ arr.length;
         System.out.println("Average of Array of element: " + Average);

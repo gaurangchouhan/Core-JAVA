@@ -1,6 +1,6 @@
 11.5 Queue Interface
 
-1. It's a collection designed for holding elements prior to processing.
+1. It's a clg.collection designed for holding elements prior to processing.
 2. Ordering: Typically, it orders elements in a FIFO (First-In-First-Out) manner.
 3. End Points: Offers two ends - one for insertion (tail) and the other removal (head).
 

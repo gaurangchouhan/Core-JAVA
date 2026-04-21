@@ -1,4 +1,4 @@
-public class UniaryOperator05 {
+public class UnaryOperator05 {
     public static void main(String[] args) {
         int a = 12;
         int b = -a;
@@ -12,11 +12,11 @@ public class UniaryOperator05 {
         System.out.println(a);
 
         int x = 6;
+
         System.out.println(x--);
         System.out.println(x);
 
         System.out.println(--x);
         System.out.println(x);
-
     }
 }

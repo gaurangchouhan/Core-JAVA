@@ -1,0 +1,7 @@
+* Annotation 4: @Documented
+
+➡ It is a marker interface that tells a tool that an annotation is to be documented.
+  Annotations are not included in 'Javadoc' comments. The use of @Documented annotation
+  in the code enables tools like Javadoc to process it and include the annotation type
+  information in the generated document.
+

@@ -36,12 +36,11 @@
             coding()      dancing()     singing(),
                                         playGitar()
 
-1. Inheritance allows a new class (subclass) to
-   inherit features from an existing class (superclass).
+1. Inheritance allows a new class (subclass) to inherit features from an existing class (superclass).
 2. Code Reusability: It enables subclasses to use methods and
                      variables of the superclass, reducing code duplication.
 3. Access Control: The protected access modifier is often used in
-                     inheritance to allow subclass access to superclass members.
+                   inheritance to allow subclass access to superclass members.
 
 
 *** Protected access Modifier is used to give access to child class

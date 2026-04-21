@@ -14,7 +14,7 @@ public class TestTransport {
         Vehicle vCar = new Car();
 
 //        Car1 cVehicle = new Vehicle();  ❌ Error (Hr ek property car ki wo vehicle ke pas nhi ho skti)
-//        Car1 cVehicle = (Car1) new Vehicle();  //   ✅ Casting
+//        Car1 cVehicle = (Car1) new Vehicle();  //   ✅ Down Casting
     }
 
     private static void caseTest(Vehicle veh){
@@ -22,7 +22,7 @@ public class TestTransport {
 //        Car1 cVehicle = (Car1) veh;  // Casting
         veh.start();
 
-        // reference ek h meine uss reference pr method bhi ek hi call kiya h lekin
-//         lekin 2 alg alg output aa rhe h (Polymorphism)
+        // reference ek h meine uss reference pr method bhi ek hi call kiya h
+        // lekin 2 alg alg output aa rhe h (Polymorphism)
     }
 }

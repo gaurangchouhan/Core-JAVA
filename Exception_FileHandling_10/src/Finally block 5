@@ -10,14 +10,14 @@ try{
   try{
      int result = 1 / 0;
      }catch (SomeException e) {
-         System. out. println( "Something caught");
+         System. out. println("Something caught");
      }finally {
          System.out.println("Not quite finally");
      }
 }catch (ArithmeticException e) {
-     System. out. println( "ArithmeticException caught");
+     System.out.println( "ArithmeticException caught");
 }finally {
-System.out.println( "Finally");
+     System.out.println( "Finally");
 }
 
 

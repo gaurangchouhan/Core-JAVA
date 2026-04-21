@@ -8,8 +8,10 @@ When a new string is created, it's checked against the pool for a match to reuse
 
 image from whatsapp
 
-4. Concatenation: Strings can be concatenated using the + operator, but each concatenation creates a new String.
-5. Methods: Provides methods like length(), substring(), equals), compareTo(), indexOf(), for various operations.
+4. Concatenation: Strings can be concatenated using the + operator,
+                  but each concatenation creates a new String.
+5. Methods: Provides methods like length(), substring(), equals(), compareTo(), indexOf(),
+            for various operations.
 6. Memory: Being immutable, strings can use more memory when frequently modified.
 
 

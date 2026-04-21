@@ -1,0 +1,35 @@
+2.2 Bytes vs Characters
+
+* Bytes
+
+➡ Unit: 8 bits.
+➡ Use when data is binary (images, ZIP, audio) or when you need precise control of bytes.
+➡ Classes: InputStream, OutputStream, FileInputStream, FileOutputStream, BufferedInputStream,
+         BufferedOutputStream.
+
+* Characters
+
+➡ Unit: characters (Unicode code units). Java char is UTF-16 code unit.
+➡ Use for textual data (source code, CSV, plain text).
+➡ Classes: Reader, Writer, FileReader, FileWriter, BufferedReader, BufferedWriter.
+
+
+FileInputStream fin = new FileInputStream("pic.jpg"); // bytes
+FileReader fr = new FileReader("notes.txt");          // characters
+
+* Encoding
+
+➡ Characters must be encoded to bytes (e.g., UTF-8).
+➡ Use InputStreamReader / OutputStreamWriter to bridge between bytes and characters
+  and always specify charset (e.g., StandardCharsets.UTF_8) to avoid platform-dependent bugs.
+
+* Example: reading a UTF-8 text file:
+
+try (BufferedReader br = new BufferedReader(
+         new InputStreamReader(new FileInputStream("notes.txt"),
+         StandardCharsets.UTF_8))) {
+    String line;
+    while ((line = br.readLine()) != null) {
+        System.out.println(line);
+    }
+}

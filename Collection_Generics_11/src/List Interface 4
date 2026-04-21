@@ -1,6 +1,6 @@
 11.4 List Interface
 
-1. An ordered collection (also known as a sequence).
+1. An ordered clg.collection (also known as a sequence).
 2. Allows duplicate elements.
 3. Elements can be accessed by their integer index
 4. Maintains the insertion order of elements.
@@ -16,8 +16,8 @@
 4. remove(int index): Removes the element at the specified position
 5. get(int index): Returns the element at the specified position
 6. set(int index, E element): Replaces the element at the specified position
-7. size): Returns the number of elements
-8. clear): Removes all of the elements
+7. size(): Returns the number of elements
+8. clear(): Removes all of the elements
 9. contains(Object o): Returns 'true' if the list contains the specified element.
 10.indexOf(Object o): Returns the index of the first occurrence, or
                       -1 if the list does not contain the element.

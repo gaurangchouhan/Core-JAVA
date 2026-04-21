@@ -13,14 +13,14 @@ e.g. -  main method call kiya              class jo bhi objects
             print kraya
 
 main() ➡️ doStuff ➡️ go()
-                      ⬇️
+                     ⬇️
                  {go contains
                   int a = 5}
                       ⬇️
                  to jb go call
                  ho jayega to
                  go method ke sath
-                 int a bhi memory
+                 int (a) bhi memory
                  se chala jayega
 
 ➡️ heap me jaha bhi jagah milegi waha object bna ke uska reference de denge stack me

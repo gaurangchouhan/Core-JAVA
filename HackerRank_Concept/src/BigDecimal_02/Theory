@@ -1,0 +1,75 @@
+2.1 BigDecimal Class in Java
+
+* The BigDecimal class provides operations on double numbers for arithmetic,
+  scale handling, rounding, comparison, format conversion and hashing.
+
+-> It can handle very large and very small floating point numbers with great precision
+   but compensating with the time complexity a bit.
+
+* Examples:
+
+Input : double a=0.03;
+        double b=0.04;
+        double c=b-a;
+        System.out.println(c);
+Output :0.009999999999999998
+
+Input : BigDecimal _a = new BigDecimal("0.03");
+        BigDecimal _b = new BigDecimal("0.04");
+        BigDecimal _c = _b.subtract(_a);
+        System.out.println(_c);
+Output :0.01
+
+
+* Declaration:-              * Initialization:
+  double a, b;
+  BigDecimal A, B;             a = 5.4;
+                               b = 2.3;
+                               A  = BigDecimal.valueOf(5.4);
+                               B  = BigDecimal.valueOf(2.3);
+
+* Input as String representation of a double number
+
+A  = new BigDecimal(“5.4”);
+B  = new BigDecimal(“1238126387123.1234”);
+
+* pre-defined constants:
+
+A = BigDecimal.ONE;
+// Other than this, available constants
+// are BigDecimal.ZERO and BigDecimal.TEN
+
+* Mathematical operations:
+
+  int c = a + b;
+  BigDecimal C = A.add(B);
+  // Other similar function are subtract() , multiply(), divide(), pow()
+
+-> But all these functions, except pow() which takes integer as its argument
+
+
+* BigDecimal as their argument so if we want these operation with decimals or
+  string convert them to BigDecimal before passing them to functions as shown below:
+
+String str = “123456789.123456789”;
+BigDecimal C = A.add(new BigBigDecimal(str));
+double val  = 123456789.123456789;
+BigDecimal C = A.add(BigDecimal.valueOf(val));
+
+* Extraction of value from BigDecimal:
+
+ // value should be in limit of double x
+ double x   =  A.doubleValue();
+ // To get string representation of BigDecimal A
+ String z = A.toString();
+
+* Comparison:
+
+  if (a < b) {}         // For primitive double
+  if (A.compareTo(B) < 0)  {} // For BigDecimal
+
+
+* Actually compareTo returns -1(less than), 0(Equal), 1(greater than)
+  according to values. For equality we can also use:
+
+  if (A.equals(B)) {}  // A is equal to B

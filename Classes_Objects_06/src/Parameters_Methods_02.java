@@ -53,15 +53,15 @@ class Car {
 
 
     public static void main(String[] args) {
-//        Car prop = new Car();
+        Car prop = new Car();
 
-//        prop.addFuel(6);
-//        prop.drive();
-//        prop.drive();
-//        prop.drive();
-//        prop.addFuel(3);
-//        prop.drive();
-//        System.out.println(prop.getCurrentFuelLevel());
+        prop.addFuel(6);
+        prop.drive();
+        prop.drive();
+        prop.drive();
+        prop.addFuel(3);
+        prop.drive();
+        System.out.println(prop.getCurrentFuelLevel());
 
         Car myCar = new Car();
         myCar.addFuel(6);

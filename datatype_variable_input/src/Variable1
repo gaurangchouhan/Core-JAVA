@@ -16,19 +16,19 @@
                store krta h
 
 
-  "jb apn age ko call krte h to wo age ke address pr jayega
+  "jb apn age ko call krte h to jvm age ke address pr jayega
   aur memory me jo bhi byte code me value hogi
   usse convert krke print kr dega."
 
 3.2 Data Types (1 byte = 8 bits)
-    a. byte
-    b. short
-    c. int
-    d. float
-    e. double
-    f. char
-    g. long
-    h. boolean
+    a. byte    1 byte
+    b. short   2 byte
+    c. int     4 byte
+    d. float   4 byte
+    e. double  8 byte
+    f. char    2 byte
+    g. long    8 byte
+    h. boolean 1 bits
 
 3.3 Naming Convention
 

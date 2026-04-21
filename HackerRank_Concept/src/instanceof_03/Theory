@@ -1,0 +1,9 @@
+* instanceOf Keyword
+
+• instanceof is a keyword used for checking if a reference variable contains a
+  given type of object reference or not.
+
+• Following is a Java program to show different behaviors of instanceof.
+-> Henceforth it is known as a comparison operator.
+   -> the instance is getting compared to type returning boolean true or false
+      as in Java we do not have 0 and 1 boolean return types.

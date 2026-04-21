@@ -5,4 +5,5 @@
 3. In while loop remember to do the increment manually before using continue
 
 break => iska use jb hota h jb apn ko loop ke kisi point se bahar nikalna
-continue => iska use jb hota h jb apn ko loop ki kisi condition ko skip krke dusri condition pr jana ho  
+continue => iska use jb hota h jb apn ko loop ki kisi condition ko skip krke dusri
+            condition pr jana ho

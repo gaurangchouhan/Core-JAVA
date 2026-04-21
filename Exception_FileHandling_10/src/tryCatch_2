@@ -4,7 +4,7 @@ try{
 int num = 60/2;
 System.out.println (num);
 }catch (ArrayIndexOutOfBoundsException e)
-System.out.println("Array index exception: " + e.getstackTrace();
+System.out.println("Array index exception: " + e.getStackTrace();
 } catch (NumberFormatException | ArithmeticException e) {
 System.out.println("Multiple exceptions");
 catch (Exception e) {
@@ -14,4 +14,5 @@ System.out.println("Last exception");
 
 1. Try Block: Contains code that is susceptible to exceptions.
 2. Catch Block: Follows the try block and handles the exceptions thrown by the try block.
-3. When an exception occurs in the try block, the control is transferred to the catch block, where the exception is handled.
+3. When an exception occurs in the try block, the control is transferred to the catch block,
+where the exception is handled.

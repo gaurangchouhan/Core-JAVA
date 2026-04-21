@@ -1,0 +1,12 @@
+3.1 File Input/Output
+
+* Low-level (byte)
+➡ FileInputStream / FileOutputStream — read/write bytes from/to files.
+
+* Character
+➡ FileReader / FileWriter — simple for text, but they use the platform default encoding
+  (so prefer InputStreamReader/OutputStreamWriter with explicit charset).
+
+* Convenience (NIO)
+➡ java.nio.file.Files has many convenient methods (Files.readAllLines,
+  Files.newBufferedReader, Files.write, etc.) and supports charset directly.

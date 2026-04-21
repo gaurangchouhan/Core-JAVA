@@ -15,7 +15,7 @@ public class TestPassByReference {
         jo yaha p ke sath ched chad ki h wo p ke sath hi nhi balki first ke
         sath bhi ki h kyuki first & p reference same point ko hi point kr rhe h
         isliye jo x & y me change kiya wo first wale me bhi change ho gya
-         */
+        */
         p.x++;
         p.y++;
         System.out.println(p);

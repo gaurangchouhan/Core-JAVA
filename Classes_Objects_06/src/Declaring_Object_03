@@ -7,7 +7,7 @@
 
 1. Object Creation: new instantiates a new object of a class.
 2. Memory Allocation: Allocates memory for the object in the heap
-3. Constructor Invocation: Calls the class constructor to initialize the object
+3. Constructor Invocation: Calls the class constructor to initialize the object(cmd+n)
 4. Reference Return: Returns a reference to the created object.
 5. Array Creation: Also used for creating arrays, like int[] arr = new int[5]
 6. Dynamic Allocation: Unlike static állocation, new allows for dyn memory allocation,

@@ -1,0 +1,43 @@
+* Annotation 5: @Target
+
+1. What is @Target?
+
+   ➡ @Target is a meta-annotation (annotation that is used on other annotations).
+
+   ➡ It tells Java where your custom annotation can be used.
+        👉 Example: Can it be applied to a method? A class? A variable? etc.
+
+   ➡ Without @Target, your annotation can be used anywhere — but usually,
+     we want to restrict its use.
+
+
+2. How does it work?
+
+   ➡ @Target takes one or more values from the ElementType enum.
+   ➡ These values decide the valid locations for your annotation.
+
+   Example:
+   @Target(ElementType.METHOD)
+   @interface MyAnnotation {}
+   👉 This means @MyAnnotation can only be used on methods.
+
+
+3. Common ElementType Options
+
+Target Constant	   Annotations Can Be Applied To
+ANNOTATION_TYPE	       Another annotation
+CONSTRUCTOR	               Constructor
+FIELD	               Variables, constants
+LOCAL_VARIABLE	         Local variable
+METHOD	                     Method
+PACKAGE	                     Package
+PARAMETER	                Parameter
+TYPE	          Class, Interface, or enumeration
+
+
+*  @Retention Annotation It determines where and how long the annotation is retent.
+   The 3 values that the @Retention annotation can have:
+
+  SOURCE: Annotations will be retained at the source level and ignored by the compiler.
+  CLASS: Annotations will be retained at compile-time and ignored by the JVM.
+  RUNTIME: These will be retained at runtime.

@@ -1,8 +1,10 @@
 9.2 Abstract Keyword
 
-1. Abstract Class: Used to declare non-instantiable abstract classes that serve as base classes.
+1. Abstract Class: Used to declare non-instantiable abstract classes that
+                   serve as base classes.
 
-2. Abstract Method: Defines methods without implementations, requiring subclasses to provide specific functionality.
+2. Abstract Method: Defines methods without implementations,
+                    requiring subclasses to provide specific functionality.
 ➡️ Abstract method me define nhi kiya jata ki method kya print kr rhi h
    e.g- public abstract void sound();
 

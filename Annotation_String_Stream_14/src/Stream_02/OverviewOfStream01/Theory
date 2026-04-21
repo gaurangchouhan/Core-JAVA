@@ -1,0 +1,26 @@
+2.1 Overview of Streams
+
+➡ A stream is a sequence of data you can read from (Input) or write to (Output).
+
+➡ Streams are abstract - the data may come from a file, network socket, memory,
+  or another program.
+
+➡ Streams are usually one-directional (read or write).
+
+➡ You often wrap a low-level stream (like FileInputStream) with higher-level filters
+  (buffering, conversion, object serialization, etc.) to add features.
+
+
+* Java splits streams into two families:
+                                       ↙    ↘
+                                     ↙        ↘
+                                   ↙            ↘
+                            Byte streams    Character streams
+                          ➡ deal with     ➡ deal with text
+                            raw bytes       characters
+
+                          ➡ InputStream   ➡ Reader / Writer
+                            /OutputStream   and their
+                            and their       subclasses.
+                            subclasses.
+

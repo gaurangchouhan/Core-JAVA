@@ -14,10 +14,10 @@ public class TestPriority {
 
         Thread t2 = new Thread(p2);
         t2.setPriority(Thread.NORM_PRIORITY);
-        t2  .start();
+        t2.start();
 
         Thread t3 = new Thread(p3 );
-        t3.setPriority(Thread.MAX_PRIORITY    );
+        t3.setPriority(Thread.MAX_PRIORITY);
         t3.start();
     }
 }

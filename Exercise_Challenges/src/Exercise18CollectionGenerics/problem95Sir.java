@@ -15,6 +15,7 @@ public class problem95Sir {
         for (char ch : s.toCharArray()) {
             unique.add(ch);
         }
-            System.out.printf("Your unique characters are %d", unique.size());
+            System.out.printf("Your unique characters are %d",
+                    unique.size());
     }
 }

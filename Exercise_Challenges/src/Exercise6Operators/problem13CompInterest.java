@@ -4,15 +4,21 @@ import java.util.Scanner;
 
 public class problem13CompInterest {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Principle amount P = ");
-        int p = input.nextInt();
-        System.out.print("Rate of interest R = ");
-        double r = input.nextDouble();
-        System.out.print("Time T = ");
-        double t = input.nextDouble();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("numbers before swaping:");
+        System.out.print("P = ");
+        double a = sc.nextDouble();
+        System.out.print("R = ");
+        double b = sc.nextDouble();
+        System.out.print("T = ");
+        double c = sc.nextDouble();
+        System.out.print("N = ");
+        double d = sc.nextDouble();
 
-        double compoundInterest = p*(1+(r/100))*t;
-        System.out.println("Compound Interest = " + compoundInterest);
+        double base = (1 + b/d);
+        double exponential = (d * c);
+        double result = Math.pow(base, exponential);
+
+        System.out.println("CI: " + a*result);
     }
 }

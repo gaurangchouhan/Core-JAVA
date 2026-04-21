@@ -11,7 +11,5 @@ public class RelationalOperators07 {
         } else {
             System.out.println("Not Eligible for vote");
         }
-
-
     }
 }

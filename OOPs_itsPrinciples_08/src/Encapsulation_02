@@ -8,7 +8,6 @@
                      control access to class members.
 3. Getter/Setter: Provides public methods for controlled property
                   access.
-4. Maintains Integrity: Protects object state from
-                        external interference.
-5. Enhances Modularity: Keeps classes separate and
-                        reduces coupling.
+4. Maintains Integrity: Protects object state from external interference.
+
+5. Enhances Modularity: Keeps classes separate and reduces coupling.

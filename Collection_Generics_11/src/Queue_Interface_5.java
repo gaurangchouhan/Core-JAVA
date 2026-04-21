@@ -7,7 +7,7 @@ public class Queue_Interface_5 {
 
         queue.add(12);
         queue.add(3);
-        queue.offer(  7);
+        queue.offer(7);
 
         System.out.println(queue.element());
         System.out.println(queue.peek());
@@ -21,7 +21,7 @@ public class Queue_Interface_5 {
          System.out.println(queue.remove());
          Utility.print1(queue);
 
-          System.out.println(queue.poll());
+         System.out.println(queue.poll());
 
 
 

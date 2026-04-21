@@ -1,0 +1,24 @@
+4.1 Binary Input/Output
+
+* Binary I/O means reading/writing raw binary formats or primitives in a consistent binary layout.
+
+➡ DataOutputStream / DataInputStream let you write/read Java primitive values in a
+  portable binary form (writeInt, writeDouble, readUTF, etc.).
+
+➡ Use BufferedOutputStream/BufferedInputStream around them for performance.
+
+  Example:
+
+  try (DataOutputStream dos = new DataOutputStream(
+           new BufferedOutputStream(new FileOutputStream("data.bin")))) {
+      dos.writeInt(2025);
+      dos.writeDouble(3.14);
+      dos.writeUTF("hello");
+  }
+
+  try (DataInputStream dis = new DataInputStream(
+           new BufferedInputStream(new FileInputStream("data.bin")))) {
+      int year = dis.readInt();
+      double pi = dis.readDouble();
+      String s = dis.readUTF();
+  }

@@ -33,4 +33,4 @@
 
 2. Generic Types Differ Based on their Type Arguments
 ➡️ During compilation, generic type information is erased which is also known as
-  type erasure.
+   type erasure.

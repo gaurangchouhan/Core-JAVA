@@ -12,7 +12,8 @@
                       Garbage collection is automatic and non-deterministic.
 
 4. Generational Collection: Java uses a generational garbage collection strategy,
-                            which divides memory into different regions (young, old, and permanent generations)
+                            which divides memory into different regions
+                            (young, old, and permanent generations)
                             based on object ages.
 
   ➡️ jo bhi heap me esa object h jiska reference nhi h stack me uss garbage collection ko htana h
@@ -21,6 +22,29 @@
      uss heap ki location me rkha jayega
 
   ➡️ Example whatsapp pr dekh lena smjhna ho to part 2(4:18:11)
+
+           young                 old                permanent generations
+             ⬇️                   ⬇️                          ⬇️
+        jo latest           esa object jise        jo lumbe time se old me
+        bne hi h           koi na koi access       h to usse ab PG me daal
+        wo young            kre hi ja rha h        dete h
+        me rehte h
+                             esa obj jo lumbe       jvm kehta h me tere pas
+        jo isme tik          time se heap me        bohot hi kum baar aauga
+        jayega usse          bna hua h to usse
+        old me daal           old category me
+          denge                 daal denge
+
+                             isme kya hoga
+                             jvm bolega isse
+                             me tumhe thodi
+                             thodi der me aakr
+                             check krunga
+                             ki koi obj faltu
+                             to nhi h
+
+                           jo isme tik jayega
+                           wo PG me chale jayega
 
 5. Heap Memory: Garbage collection occurs in the heap memory,
                 where all Java objects reside.
@@ -31,7 +55,7 @@
 
 * Finalize Concept
 
-1. Finalization: Before an object is garbage collected, the finalizel) method may be called,
+1. Finalization: Before an object is garbage collected, the finalize() method may be called,
                  giving the object a chance to clean up resources. However,
                  it's not guaranteed to run, and its usage is generally discouraged.
 

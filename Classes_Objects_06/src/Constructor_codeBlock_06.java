@@ -11,7 +11,7 @@ public class Constructor_codeBlock_06 {
     static {                // Static Block run at once only
         carSold = 0;
         System.out.println("It is an STATIC BLOCK ");
-    }
+       }
     {
 //      Consider A Default construction jo saare construction ke pehle call hoga
         carSold++;

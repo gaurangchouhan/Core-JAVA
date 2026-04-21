@@ -10,5 +10,6 @@
 • FileReader(File file): Creates a FileReader object to read from the specified File object.
 
 4. Common Methods:
-• read): Reads a single character and returns it as an integer. Returns -1 if the end of the stream is reached.
+• read(): Reads a single character and returns it as an integer.
+          Returns -1 if the end of the stream is reached.
 • read(char[] cbuf): Reads characters into an array and returns the number of characters read.

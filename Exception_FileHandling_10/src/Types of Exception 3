@@ -16,5 +16,6 @@
                                FileNotFoundException     IllegalThreadStateException
 
 
-1. Checked Exceptions: These are exceptions that must be either caught or declared in the method.
+1. Checked Exceptions: These are exceptions that must be either caught or
+                       declared in the method.
 2. Unchecked Exceptions: These are exceptions that do not need to be explicitly handled.
