@@ -2,12 +2,17 @@ package Exercise22Patterns;
 
 public class Pattern7 {
     void pattern(){
-        for (int i = 0; i < 5; i++) {
-            for (int j = 5; j > i; j--) {
+        //lines
+        for (int i = 0; i < 9; i++) {
+            //space
+            for (int j = 9; j > i; j--) {
                 System.out.print(" ");
-                for (int k = 1; k >= i; k++) {
-                    System.out.print(" *");
+            }
+            for (int k = 0; k<=i; k++) {
+                if (i%2!=0){
+                    continue;
                 }
+                System.out.print(" *");
             }
             System.out.println();
         }
