@@ -1,0 +1,38 @@
+* What is Annotation?
+➡  it is an extra info which was going to add on ur code.
+
+➡  if u add extra info in ur code ur existing program, files, projects will not be
+   affected the feature purpose in which u written the code
+   rather then the extra features will be added in this.
+
+➡ It works based on the mechanism of interfaces
+
+➡ That is called Annotation.
+
+* Types of Annotation
+
+                                  Annotation
+                                ↙            ↘
+                            Build-in       Costume
+                          ↙         ↘
+  General Purpose Annotations      Meta Annotations
+     (java.lang package)      (java.lang.annotation package)
+         @Override                    @Inherited
+        @Deprecated                   @Documented
+       @SafeVar Args                  @Target
+     @SuppressWarnings                @Retention
+     @FunctionalInterface             @Repeatable
+
+
+* @ -  it inform complier that this is not a interface, its an annotation type
+       which u can add as a suppliment info to ur source code.
+* only few interface keywords then it act as a normal interface
+* Annotation works on the mechanism of interface
+
+* Categories of Annotations
+
+1. Marker Annotations -  @Override is an example of Marker Annotation.
+2. Single value Annotations
+3. Full Annotations
+4. Type Annotations
+5. Repeating Annotations

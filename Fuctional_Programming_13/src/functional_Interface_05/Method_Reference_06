@@ -1,0 +1,36 @@
+13.6 Method References
+
+1. Purpose Syntax & Usage: A method reference is described using :: (double colon) syntax.
+                           For example, System.out::println refers to the println
+                           method of the System.out object.
+
+2. Functional Interfaces: They are used with functional interfaces.
+3. Benefit: They make your code more readable and concise
+4. Limitation: They can only be used for methods that fit the parameters and
+               return type.
+
+
+Syntax:
+• Static Method References:
+ClassName::staticMethodName
+
+• Instance Method:
+instance::instanceMethodName
+
+• Instance Method Particular Class:
+ClassName::methodName
+
+• Constructor References:
+ClassName::new
+
+
+                  Lambda Expression               Method Reference
+
+               s → s. toLowerCase()              String:: toLowerCase
+
+               s -> s.toLowerCase ()             String:: toLowerCase
+
+               (a, b) → a. compareTo (b)         For Integers it will be Integer:: compareTo and for
+                                                 strings it is String:: compareTo
+
+         (a, b) -> Person.compareByAge(a, b)     Person::compareByAge

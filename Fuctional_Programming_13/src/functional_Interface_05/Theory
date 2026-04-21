@@ -1,0 +1,20 @@
+13.5 Functional Interfaces
+
+1. Single Abstract Method (SAM): A functional interface has only one abstract method.
+                                 However, it can have multiple default or static methods.
+
+2. Lambda Compatibility: They are intended to be used with Lambda expressions,
+                         providing a target type for lambdas and method references.
+
+3.@FunctionalInterface Annotation: While not mandatory, this annotation helps
+                                   the compiler to identify the intention of making
+                                   an interface functional and to generate an error
+                                   if the annotated interface does not satisfy the conditions.
+
+4. Common Examples: Predicate, Consumer, BinaryOperator, Runnable, Callable, Comparator,
+                    and user-defined interfaces can be functional if they have only
+                    one abstract method.
+
+* Predicate - ek value leta h aur return krta h boolean
+* Consumer - ek object leta h (like- string) aur usko return krta h
+* BinaryOperator - 2 input leta h aur 1 value return krta h

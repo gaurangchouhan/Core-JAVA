@@ -1,0 +1,17 @@
+package Exercise20FunctionalProgramming;
+
+import java.util.List;
+import java.util.Optional;
+
+public class problem112Optional {
+    public static void main(String[] args) {
+        System.out.println(toOptional("null"));
+    }
+
+    public static Optional<String> toOptional (String str) {
+        if (str == null || str.isEmpty()) {
+            return Optional.empty();
+        }
+        return Optional.of(str.toUpperCase());
+    }
+}

@@ -1,0 +1,18 @@
+* Intermediate Operations
+
+1. Laziness: Executed only when a terminal operation is invoked,
+             setting up a pipeline without processing data.
+2. Stream Transformation: Transform one stream into another,
+                          e.g., filter, map. They're chainable,
+                          allowing multiple transformations.
+3. State Handling: Can be stateless (like map) or stateful(like sort)
+                    affecting processing.
+
+* Terminal Operations
+
+1. Computation Trigger: Initiates the stream processing and closes the stream.
+                        After this, the stream can't be reused.
+2. Final Outcome: Produces a result (like a sum or list) or a side-effect
+                  (like printing each element). Not chainable.
+3. Examples: Operations like collect, forEach, reduce, sum, max, min
+             and count are terminal.

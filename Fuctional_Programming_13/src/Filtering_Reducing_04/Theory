@@ -1,0 +1,26 @@
+13.4 Filtering & Reducing (filter)
+
+* Filtering
+
+1. Purpose: Used to filter elements of a stream based on a given predicate
+            (a condition). Only elements that satisfy the condition
+            are included in the resulting stream.
+2. Lazy Operation: It's a lazy operation, meaning it's not executed
+                   until a terminal operation (like collect or forEach) is invoked
+                   on the stream.
+3. Returns a Stream: filter itself returns a new stream with
+                     elements that match the predicate.
+
+
+* Reducing
+
+1. Purpose: Used to reduce the elements of a stream to a single value.
+            It takes a binary operator as a parameter and
+            applies it repeatedly, combining the elements of the stream.
+2. Versatile: Can be used for summing, finding min or max, and
+              combining elements in a myriad of ways.
+3. Optional or Default Value: Without an identity value,
+                              reduce returns an Optional.
+                              With an identity value,
+                              it returns a default value
+                              if the stream is empty.

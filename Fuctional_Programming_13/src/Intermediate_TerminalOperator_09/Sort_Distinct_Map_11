@@ -1,0 +1,37 @@
+13.11 Sort, Distinct, Map
+
+1. sorted() orders the elements of a stream based on their natural order or a provided
+   comparator.
+
+2. distinct() filters out duplicate elements, ensuring that every element in the
+   resulting stream is unique.
+
+3. map() applies a function to each element of a stream, transforming them in a new stream
+   of results based on the function
+
+
+List<Integer> numbers = List.of(4, 2, 5, 1, 3);
+List<Integer> sortedNumbers = numbers. stream ()
+.sorted ()
+.collect(Collectors.toList());
+
+// Output: [1, 2, 3, 4, 5]
+System.out.println (sortedNumbers);
+
+List<String> items = List.of("apple",
+"banana", "apple", "orange", "banana");
+List<String> distinctItems = items. stream ()
+.distinct()
+.collect (Collectors.toList());
+
+// Output: [apple, banana, orange]
+System.out.println(distinctItems);
+
+List<String> words = List.of ("Stream",
+"Operations", "Java");
+List<String> uppercaseWords = words.stream ()
+.map (String:: toUpperCase)
+.collect(Collectors.toList());
+
+// Output: [STREAM, OPERATIONS, JAVA]
+System.out.println(uppercaseWords);

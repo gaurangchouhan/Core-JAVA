@@ -1,0 +1,20 @@
+12.8 Intro to Executor Service
+
+* Executor Service kya krti h user ko maan lo 5 thread ki jarurat h to executor service
+  threadpool me 5 thread ka pool bna diya aur unko start krke rkh liya apne pas aur kahega
+  aap kaam dete jayeye me 5cho thread me equally deta rahunga
+
+* Sare task ko queue me arrange kr lega aur jb tk rkhega jb tk puri executor service
+  ko nhi maar dete
+
+* jaise hi koi thread khali hua to queue me se 1 task khali thread ko de dega
+
+* thread ko bnane ka aur usse wapas marne ka kaam ab wo nhi krna pad rha h
+
+1. Purpose: ExecutorService is a framework provided by the Java Concurrency API
+            to manage and execute submitted tasks without the need to manually manage
+            thread life cycles.
+2. Thread Pool Management: ExecutorService efficiently reuses a fixed pool of threads
+                           to execute tasks, thereby improving performance by reducing
+                           the overhead of thread creation, especially for
+                           short-lived asynchronous tasks.

@@ -1,0 +1,13 @@
+12.5 Join Method
+
+1. Purpose of join: The join method is used to make the calling thread wait until
+                    the thread on which join has been called completes its execution.
+
+2. Synchronization of Threads: join helps in synchronizing multiple threads,
+                               ensuring that a thread completes its execution
+                               before the next steps in the calling thread proceed
+
+3. Overloaded Versions: join comes in three versions:
+• join(): Waits indefinitely until the thread on which it's called finishes.
+• join(long millis): Waits for the thread to die for the specified milliseconds.
+• join(long millis, int nanos): Waits for the thread to die for the specified milliseconds plus nanoseconds.
